@@ -1,23 +1,22 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "declaration": true,
-    "removeComments": true,
     "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": ".build",
+    "preserveConstEnums": true,
+    "rootDir": "./",
     "target": "ES2022",
-    "sourceMap": true,
-    "outDir": "./dist",
+    "removeComments": true,
     "skipLibCheck": true,
-    "baseUrl": "./",
-    "incremental": true,
+    "sourceMap": true,
     "strict": true,
-    "useUnknownInCatchVariables": false,
-    "paths": {
-      "src/*": ["src/*"]
-    }
+    "strictNullChecks": true
   },
-  "exclude": ["tests", "dist", "prisma"]
+  "exclude": ["node_modules", "src/**/*.test.ts", ".eslintrc.js"],
+  "include": ["src/**/*.ts", "prisma/schema.prisma"]
 }

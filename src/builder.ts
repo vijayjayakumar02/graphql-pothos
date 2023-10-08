@@ -5,7 +5,7 @@ import SimpleObjectsPlugin from '@pothos/plugin-simple-objects';
 import ErrorsPlugin from '@pothos/plugin-errors';
 import type PrismaTypes from '@pothos/plugin-prisma/generated';
 import { db } from './db';
-import { SchemaContext } from 'src/shared/shared_types';
+import { SchemaContext } from './shared/shared_types';
 
 export const builder = new SchemaBuilder<{
   PrismaTypes: PrismaTypes;

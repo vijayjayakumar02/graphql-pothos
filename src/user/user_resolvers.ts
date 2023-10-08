@@ -36,7 +36,7 @@ builder.mutationFields((t) => ({
         });
         return user;
       } catch (error) {
-        catchResolverError(error, { entity: 'User', context });
+        catchResolverError(error as Error, { entity: 'User', context });
       }
     },
   }),
@@ -59,7 +59,7 @@ builder.queryFields((t) => ({
         console.log('oombu');
         return await db.user.findMany();
       } catch (error) {
-        catchResolverError(error, { entity: 'User', context });
+        catchResolverError(error as Error, { entity: 'User', context });
       }
     },
   }),
