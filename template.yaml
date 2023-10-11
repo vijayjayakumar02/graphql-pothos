@@ -6,7 +6,7 @@ Globals:
     Environment:
       Variables:
         DATABASE_URL: XXXXXXXXXX
-        PRISMA_CLI_BINARY_TARGETS: native,rhel-openssl-1.0.x
+        PRISMA_CLI_BINARY_TARGETS: rhel-openssl-1.0.x
 Resources:
   GraphqlFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
